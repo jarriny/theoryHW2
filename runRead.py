@@ -4,6 +4,7 @@ import sys
 
 input = sys.stdin.read()
 
+newInput = input
 def run(string, fig):
     current = fig.start
     for x in string:
