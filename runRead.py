@@ -2,9 +2,9 @@ from dfa import dfa
 from transition import transition
 import sys
 
+input = sys.stdin.read()
 
 def run(string, fig):
-
     current = fig.start
     for x in string:
         for t in fig.transitions:
@@ -29,7 +29,7 @@ def main():
     start = 'q1'
     accept = {'q2'}
     fig_14 = dfa(states, alpha, transitions, start, accept)
-    string = sys.stdin.read()
+    string = input
     # sys.stdin.read()
     result = run(string, fig_14)
     if result:

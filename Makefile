@@ -1,4 +1,4 @@
-
+setup:
 
 run-hw2-dfa:
 	python3 runRead.py
