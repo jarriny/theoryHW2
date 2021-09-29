@@ -29,7 +29,7 @@ def main():
     start = 'q1'
     accept = {'q2'}
     fig_14 = dfa(states, alpha, transitions, start, accept)
-    string = input()
+    string = sys.stdin.read()
     # sys.stdin.read()
     result = run(string, fig_14)
     if result:
