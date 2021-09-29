@@ -36,6 +36,8 @@ def dfa_to_xml(dfa):
         transition_read.text = transition.character
     tree = ET.ElementTree(automaton)
     tree.write("Output.xml", encoding='utf-8', xml_declaration=True)
+    with open("Output.xml", 'r') as fin:
+        print(fin.read())
 
 if __name__ == "__main__":
     main()
