@@ -1,13 +1,17 @@
-import xml.etree.ElementTree as ET
 import sys
+input = sys.stdin.read()
+
+import xml.etree.ElementTree as ET
+#import sys
 import itertools
 from dfa import dfa
 from transition import transition
 from runRead import run
 from xml_to_dfa import xml_to_dfa
 
-input = sys.stdin.read()
+#input = sys.stdin.read()
 
+#print(input)
 
 dfa_object = xml_to_dfa(input)
 alphabet = dfa_object.alpha
